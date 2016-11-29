@@ -8,11 +8,17 @@ namespace OrganicPt.Controllers
 {
     public class HomeController : Controller
     {
+        public IRepository<Stock> StockRepository { get; set; } 
+        public HomeController(IRepository<Stock> stockRepository)
+        {
+            StockRepository = stockRepository;
+        }
+
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-
-            return View();
+            var stocks = StockRepository.FetchAll();
+            return View(stocks);
         }
     }
 }

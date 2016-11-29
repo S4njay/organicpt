@@ -57,3 +57,13 @@ C:\Users\sanjay\github\organicpt\OrganicPt\bin\Antlr3.Runtime.pdb
 C:\Users\sanjay\github\organicpt\OrganicPt\obj\Debug\OrganicPt.csprojResolveAssemblyReference.cache
 C:\Users\sanjay\github\organicpt\OrganicPt\obj\Debug\OrganicPt.dll
 C:\Users\sanjay\github\organicpt\OrganicPt\obj\Debug\OrganicPt.pdb
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.Unity.dll
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.Unity.xml
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\sanjay\github\organicpt\OrganicPt\bin\Unity.Mvc4.dll
