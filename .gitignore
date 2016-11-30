@@ -22,6 +22,9 @@ Thumbs.db
 *.dll
 *.lib
 *.sbr
+*.tmp
 
-bin/
+bin
+obj
+packages
 
