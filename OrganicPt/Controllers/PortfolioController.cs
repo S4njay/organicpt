@@ -6,11 +6,17 @@ using System.Web.Mvc;
 
 namespace OrganicPt.Controllers
 {
-    public class HomeController : Controller
+    public class PortfolioController : Controller
     {
+        public IRepository<Stock> StockRepository { get; set; }
+
+        public PortfolioController(IRepository<Stock> repository)
+        {
+            StockRepository = repository;
+        }
+
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";            
             return View();
         }        
     }

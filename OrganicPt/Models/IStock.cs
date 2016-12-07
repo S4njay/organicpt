@@ -8,6 +8,6 @@ namespace OrganicPt
         public string Symbol { get; set; }
         public string Name { get; set; }
         public string Currency { get; set; }
-        public decimal CurrentMarketPrice { get; set; }
+        public decimal CurrentMarketPrice { get; set; }       
     }
 }
