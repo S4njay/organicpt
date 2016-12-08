@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Results;
 using System.Web.Mvc;
 
 namespace OrganicPt.Controllers
@@ -40,14 +41,21 @@ namespace OrganicPt.Controllers
             return StockRepository.FetchAll();
         }
 
-        public HttpResponseMessage GetCmp(Guid id)
+        public HttpResponseMessage GetCmp(string symbol)
         {
             var response = new HttpResponseMessage();
-            Source.StockUrl = StockRepository.GetByID(id).Symbol;                
-            response.Content = new StringContent(Source.DownloadString());
+            response.Content = new StringContent(Source.GetCmp(Source.Urls[0] + symbol));
             response.Content.Headers.ContentType = new MediaTypeHeaderValue("text/html");               
             return response;
 
+        }
+
+        public HttpResponseMessage GetWorldMarkets()
+        {
+           return Request.CreateResponse(
+                HttpStatusCode.OK, 
+                Source.GetWorldMarkets(Source.Urls[1]), 
+                Request.GetConfiguration());
         }
 
         public void Post([FromBody]string value)

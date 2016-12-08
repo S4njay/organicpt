@@ -224,6 +224,7 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Models\FakeStockSource.cs" />
     <Compile Include="Models\GoogleStockSource.cs" />
     <Compile Include="Models\ILiveStockSource.cs" />
     <Compile Include="Controllers\InfoController.cs" />
@@ -235,7 +236,7 @@
     <Compile Include="Models\Repository\IOrganicPtcontext.cs" />
     <Compile Include="Models\Repository\OrganicRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Repository\IStockRepository.cs" />
+    <Compile Include="Models\Repository\StockRepository.cs" />
     <Compile Include="Models\IStock.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -277,11 +278,11 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\Home\home-controller.js" />
     <Content Include="Scripts\portfolio-module.js" />
-    <Content Include="Scripts\Portfolio\stock-controller.js" />
     <Content Include="Scripts\Portfolio\portfolio-repository.js" />
     <Content Include="Scripts\Portfolio\portfolio-controller.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Stock\stock-controller.js" />
     <Content Include="Scripts\Templates\home.html" />
     <Content Include="Scripts\Templates\stocks.html" />
     <Content Include="Unity.Mvc4.README.txt" />

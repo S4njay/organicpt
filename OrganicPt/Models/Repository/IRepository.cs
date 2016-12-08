@@ -9,7 +9,7 @@ namespace OrganicPt
     public interface IRepository<T> : IDisposable
     {
         IEnumerable<T> FetchAll();
-        T GetByID(Guid Id);
+        T GetBySymbol(string symbol);
         void Insert(T item);
         void Delete(T item);
         void Update(T item);

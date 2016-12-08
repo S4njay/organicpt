@@ -4,11 +4,13 @@
     function callAtInterval() {
         $scope.dataLoaded = false;
         portfolioRepository
-            .GetCmp($scope.stock.stockId.toUpperCase())
+            .GetCmp($scope.stock.symbol)
             .then(function (cmp) {
+                if ($scope.cmp < cmp) $scope.color = "red";
+                else if ($scope.cmp > cmp) $scope.color = "green";
+                else { $scope.color = "";}
                 $scope.cmp = cmp;
                 $scope.dataLoaded = true;
             });
     }
 });
-

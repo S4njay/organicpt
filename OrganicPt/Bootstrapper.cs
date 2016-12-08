@@ -34,7 +34,7 @@ namespace OrganicPt
     {
             container.RegisterType<IOrganicPtContext, OrganicPtContext>();
             container.RegisterType<IRepository<Stock>, StockRepository>();
-            container.RegisterType<ILiveStockSource, GoogleStockSource>();
+            container.RegisterType<ILiveStockSource, FakeStockSource>();
     }
   }
 }

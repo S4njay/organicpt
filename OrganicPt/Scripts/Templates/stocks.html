@@ -1,40 +1,4 @@
-﻿<style>
-    .glyphicon-refresh-animate {
-        -animation: spin 1s infinite linear;
-        -webkit-animation: spinWebkit 1s infinite linear;
-        -moz-animation: spinMoz 1s infinite linear;
-    }
-
-    @-webkit-keyframes spinWebkit {
-        from {
-            -webkit-transform: rotate(0deg);
-        }
-
-        to {
-            -webkit-transform: rotate(360deg);
-        }
-    }
-
-    @keyframes spinMoz {
-        from {
-            transform: scale(1) rotate(0deg);
-        }
-
-        to {
-            transform: scale(1) rotate(360deg);
-        }
-    }
-
-    @keyframes spin {
-        from {
-            transform: scale(1) rotate(0deg);
-        }
-
-        to {
-            transform: scale(1) rotate(360deg);
-        }
-    }
-</style>
+﻿
 <table class="table">
 <tr>
     <th>
@@ -42,9 +6,6 @@
     </th>
     <th>
         Name
-    </th>
-    <th>
-       Currency
     </th>
     <th>
        Current Market Price
@@ -60,12 +21,9 @@
     <td>
        {{stock.name}}
     </td>
-    <td>
-        {{stock.currency}}
-    </td>
     <td ng-controller="StockController">
-        <span>{{cmp}}</span>&nbsp;
-        <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" ng-hide="dataLoaded"></span>
+        <span style="color:{{color}}" animate-on-change='cmp'>{{cmp}}</span>&nbsp;
+        <!--<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" ng-hide="dataLoaded"></span>-->
     </td>    
 </tr>
 </table>

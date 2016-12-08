@@ -1,9 +1,11 @@
-﻿namespace OrganicPt
+﻿using System.Collections.Generic;
+
+namespace OrganicPt
 {
     public interface ILiveStockSource
     {
-        string BaseUrl { get;}
-        string StockUrl { get; set; }
-        string DownloadString();
+        string GetCmp(string url);        
+        IEnumerable<Stock> GetWorldMarkets(string url);
+        string[] Urls { get; set; }
     }
 }

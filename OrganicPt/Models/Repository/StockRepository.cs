@@ -23,9 +23,9 @@ namespace OrganicPt
             return context.Stocks;
         }
 
-        public Stock GetByID(Guid Id)
+        public Stock GetBySymbol(string symbol)
         {
-            return context.Stocks.FirstOrDefault(s => s.StockId == Id);
+            return context.Stocks.FirstOrDefault(s => s.Symbol == symbol);
         }
 
         public void Insert(Stock item)
@@ -40,7 +40,7 @@ namespace OrganicPt
 
         public void Update(Stock item)
         {
-            var oldItem = context.Stocks.FirstOrDefault(s => s.StockId == item.StockId);
+            var oldItem = context.Stocks.FirstOrDefault(s => s.Symbol == item.Symbol);
             if(oldItem != null)
             {
                 var position = context.Stocks.IndexOf(oldItem);
